@@ -7,7 +7,7 @@
     "serve": "webpack-dev-server --mode=development",
     "test": "mocha test/**/*_spec.js --require test/spec_helper.js --recursive --exit",
     "build": "npm run seed; webpack -p",
-    "start": "node server/server.js",
+    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && node server/server.js",
     "seed": "node server/seed.js"
   },
   "repository": {
