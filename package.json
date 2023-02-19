@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "webpack-dev-server --mode=development",
     "test": "mocha test/**/*_spec.js --require test/spec_helper.js --recursive --exit",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider && npm run seed && webpack -p",
+    "build": "npm run seed && webpack -p",
     "start": "node server/server.js",
     "seed": "node server/seed.js"
   },
@@ -75,6 +75,6 @@
     "webpack-dev-server": "^3.11.0"
   },
   "engines": {
-    "node": "16"
+    "node": "14"
   }
 }
