@@ -1,3 +1,5 @@
+node_modules
+
 # Ignore big data files
 server/data/archive
-node_modules
+server/dist/bundle.js
